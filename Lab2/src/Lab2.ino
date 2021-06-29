@@ -25,7 +25,7 @@ void loop() {
 
   //turn light on/off with delay influenced by knob value
   digitalWrite(D5, HIGH);
-  delay(value);
+  delay((value*value)/200);
   digitalWrite(D5, LOW);
-  delay(value);
+  delay((value*value)/200);
 }
